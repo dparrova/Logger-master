@@ -1,0 +1,211 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v2.x A1
+U 1 1 6477CAB0
+P 2700 2400
+F 0 "A1" H 2700 1311 50  0000 C CNN
+F 1 "Arduino_Nano_v2.x" H 2700 1220 50  0000 C CNN
+F 2 "Modules:Arduino_Nano" H 2700 2400 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf" H 2700 2400 50  0001 C CNN
+	1    2700 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6477E031
+P 4350 3050
+F 0 "R1" V 4557 3050 50  0000 C CNN
+F 1 "R" V 4466 3050 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4280 3050 50  0001 C CNN
+F 3 "~" H 4350 3050 50  0001 C CNN
+	1    4350 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:RJ45 J3
+U 1 1 6477F1ED
+P 6250 2050
+F 0 "J3" H 5920 2054 50  0000 R CNN
+F 1 "SENSOR" H 5920 2145 50  0000 R CNN
+F 2 "Connectors:RJ45_8" V 6250 2075 50  0001 C CNN
+F 3 "~" V 6250 2075 50  0001 C CNN
+	1    6250 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Buzzer BZ1
+U 1 1 647801B4
+P 4800 3150
+F 0 "BZ1" H 4952 3179 50  0000 L CNN
+F 1 "Buzzer" H 4952 3088 50  0000 L CNN
+F 2 "Buzzers_Beepers:Buzzer_12x9.5RM7.6" V 4775 3250 50  0001 C CNN
+F 3 "~" V 4775 3250 50  0001 C CNN
+	1    4800 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x06_MountingPin J2
+U 1 1 647822E4
+P 7050 3700
+F 0 "J2" H 7138 3614 50  0000 L CNN
+F 1 "SD" H 7138 3523 50  0000 L CNN
+F 2 "Connectors:Wafer_Vertical17.5x5.8x7RM2.5-6" H 7050 3700 50  0001 C CNN
+F 3 "~" H 7050 3700 50  0001 C CNN
+	1    7050 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x05_MountingPin J1
+U 1 1 64784E41
+P 4900 4200
+F 0 "J1" H 4988 4164 50  0000 L CNN
+F 1 "RCT" H 4988 4073 50  0000 L CNN
+F 2 "Connectors:Wafer_Vertical15x5.8x7RM2.5-5" H 4900 4200 50  0001 C CNN
+F 3 "~" H 4900 4200 50  0001 C CNN
+	1    4900 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3050 4700 3050
+Text GLabel 2200 2400 0    50   Input ~ 0
+Buzzer
+Text GLabel 4200 3050 0    50   Input ~ 0
+Buzzer
+$Comp
+L power:GND #PWR0101
+U 1 1 6478D57A
+P 4700 3250
+F 0 "#PWR0101" H 4700 3000 50  0001 C CNN
+F 1 "GND" H 4705 3077 50  0000 C CNN
+F 2 "" H 4700 3250 50  0001 C CNN
+F 3 "" H 4700 3250 50  0001 C CNN
+	1    4700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6478EEE9
+P 2700 3400
+F 0 "#PWR0102" H 2700 3150 50  0001 C CNN
+F 1 "GND" H 2705 3227 50  0000 C CNN
+F 2 "" H 2700 3400 50  0001 C CNN
+F 3 "" H 2700 3400 50  0001 C CNN
+	1    2700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 64792569
+P 2800 3400
+F 0 "#PWR0103" H 2800 3150 50  0001 C CNN
+F 1 "GND" H 2805 3227 50  0000 C CNN
+F 2 "" H 2800 3400 50  0001 C CNN
+F 3 "" H 2800 3400 50  0001 C CNN
+	1    2800 3400
+	1    0    0    -1  
+$EndComp
+Text GLabel 2200 2200 0    50   Input ~ 0
+RST
+Text GLabel 2200 2300 0    50   Input ~ 0
+CS_DTH11
+Text GLabel 2200 2900 0    50   Input ~ 0
+MOSI
+Text GLabel 2200 3000 0    50   Input ~ 0
+MISO
+Text GLabel 2200 3100 0    50   Input ~ 0
+SCK
+$Comp
+L power:GND #PWR0104
+U 1 1 64793E67
+P 6400 3500
+F 0 "#PWR0104" H 6400 3250 50  0001 C CNN
+F 1 "GND" H 6405 3327 50  0000 C CNN
+F 2 "" H 6400 3500 50  0001 C CNN
+F 3 "" H 6400 3500 50  0001 C CNN
+	1    6400 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3500 6850 3500
+Text GLabel 6850 3600 0    50   Input ~ 0
+5V
+Text GLabel 2900 1400 1    50   Input ~ 0
+5V
+Text GLabel 6850 3700 0    50   Input ~ 0
+MISO
+Text GLabel 6850 3800 0    50   Input ~ 0
+MOSI
+Text GLabel 6850 3900 0    50   Input ~ 0
+SCK
+Text GLabel 6850 4000 0    50   Input ~ 0
+CS_SD
+Text GLabel 2200 2700 0    50   Input ~ 0
+CS_SD
+Text GLabel 4700 4000 0    50   Input ~ 0
+5V
+$Comp
+L power:GND #PWR0105
+U 1 1 6479821D
+P 4400 4100
+F 0 "#PWR0105" H 4400 3850 50  0001 C CNN
+F 1 "GND" H 4405 3927 50  0000 C CNN
+F 2 "" H 4400 4100 50  0001 C CNN
+F 3 "" H 4400 4100 50  0001 C CNN
+	1    4400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4100 4700 4100
+Text GLabel 4700 4200 0    50   Input ~ 0
+CLK
+Text GLabel 4700 4400 0    50   Input ~ 0
+RST
+Text GLabel 4700 4300 0    50   Input ~ 0
+CS_RCT
+Text GLabel 2200 2100 0    50   Input ~ 0
+CLK
+Text GLabel 2200 2000 0    50   Input ~ 0
+CS_RCT
+Text GLabel 2200 2800 0    50   Input ~ 0
+CS_MAX
+Text GLabel 5850 1750 0    50   Input ~ 0
+5V
+Wire Wire Line
+	5850 2350 5850 2450
+$Comp
+L power:GND #PWR0106
+U 1 1 6479A283
+P 5850 2450
+F 0 "#PWR0106" H 5850 2200 50  0001 C CNN
+F 1 "GND" H 5855 2277 50  0000 C CNN
+F 2 "" H 5850 2450 50  0001 C CNN
+F 3 "" H 5850 2450 50  0001 C CNN
+	1    5850 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 2450
+Text GLabel 5850 1950 0    50   Input ~ 0
+CS_DHT11
+Text GLabel 5850 2050 0    50   Input ~ 0
+SCK
+Text GLabel 5850 2150 0    50   Input ~ 0
+CS_MAX
+Text GLabel 5850 2250 0    50   Input ~ 0
+MISO
+Wire Wire Line
+	5850 1850 5850 1750
+$EndSCHEMATC
