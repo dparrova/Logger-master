@@ -68,7 +68,7 @@ Se integra un buzzer para tener una ayuda auditiva para identificar acciones
   * Solución: elimine el archivo y vuelvalo a crear (ver sección *Crear archivo Datos.csv*)
 * Alacena datos pero con el errores en la fecha
   * Solución : configurar el reloj (ver sección *Configuración de hora*)
-*  En cada reinicio del dispositivo se desconfigura la fecha y hora
+* En cada reinicio del dispositivo se desconfigura la fecha y hora
   * Cambiar la bateria del RTC, esto se hace abriendo la caja y cambiado la bateria redonda y despues *Crear archivo Datos.csv*
 
    
