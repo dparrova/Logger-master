@@ -37,8 +37,11 @@ Con el programa Blog de notas y realizar los siguientes pasos:
 * click Guardar
 
 ### Configuración de hora
-Crear un archivo en la memoria microSD con el nombre hora.txt, donde debe colocar el una sola linea la hora deseada respetando el siguiente formato:
-´formato--de--dia--yhora´
+Crear un archivo en la memoria microSD con el nombre fechahora.txt, donde debe colocar el una sola linea la hora deseada respetando el siguiente formato:
+
+Jan 01 2024
+01:00:00
+
 
 El dispositivo, leera la inforamación y configurará el reloj, posteriormente eliminará el archivo. 
 
