@@ -10,6 +10,7 @@ En este repositorio encontrará:
 * Funcionamiento
 * Sonidos
 * Errores
+* repositorio https://github.com/dparrova/Logger-master 
 
 ## Listado de componentes
 para el desarrollo del Datalogger se usaron los siguiente modulos
